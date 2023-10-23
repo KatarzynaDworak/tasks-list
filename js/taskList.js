@@ -10,6 +10,13 @@
         },
     ];
     
+    const render = () => {
+        let htmlstring = "";
+        for (const task of tasks) {
+        htmlstring +-    
+        }
+    }
+
     const init = () => {
 
     };
