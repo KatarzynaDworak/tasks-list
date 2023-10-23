@@ -13,8 +13,14 @@
     const render = () => {
         let htmlstring = "";
         for (const task of tasks) {
-        htmlstring +-    
+        htmlstring +-  `
+        <li>
+            ${task.content}
+        </li>
+        `;  
         }
+
+        document.querySelector(".js-tasks").innerHTML = htmlstring;
     }
 
     const init = () => {
