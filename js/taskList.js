@@ -13,7 +13,7 @@
     const render = () => {
         let htmlstring = "";
         for (const task of tasks) {
-        htmlstring +-  `
+        htmlstring +=  `
         <li>
             ${task.content}
         </li>
@@ -24,7 +24,7 @@
     }
 
     const init = () => {
-
+        render();
     };
 
     init();
