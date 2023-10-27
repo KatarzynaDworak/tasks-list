@@ -60,3 +60,9 @@ html {
 .form__button:active {
   background: hsl(180, 100%, 35%);
 }
+
+.tasks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
