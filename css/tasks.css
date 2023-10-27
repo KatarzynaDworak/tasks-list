@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after ::before {
+  box-sizing: inherit;
+}
+
+.tasks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tasks__item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.tasks__content {
+
+}
+
+.tasks__content--done {
+  text-decoration: line-through;
+}
