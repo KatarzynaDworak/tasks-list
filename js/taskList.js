@@ -37,7 +37,7 @@
         });
        }); 
 
-       const toggleDoneButtons = document.querySelectorAll(".js-done");
+       const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
        toggleDoneButtons.forEach((toggleDoneButton, index) => {
         toggleDoneButton.addEventListener("click", () => {
@@ -50,9 +50,9 @@
         let htmlstring = "";
         for (const task of tasks) {
         htmlstring +=  `
-        <li
+        <li class="tasks__item js-task">
         ${task.done ? " style=\"text-decoration: line-through\"" : ""}>
-        <button class="js-done">zrobione?</button>
+        <button class="tasks__button tasks_button--toggleDone js-toggleDone">zrobione?</button>
         <button class="js-remove">usuń</button>
         ${task.content}
         </li>
