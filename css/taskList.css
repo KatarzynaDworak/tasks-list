@@ -29,3 +29,14 @@ html {
 .section__body {
   padding: 20px;
 }
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
+}
+
+@media (max-width: 767px)
+.form {
+  grid-template-columns: 1fr;
+}
