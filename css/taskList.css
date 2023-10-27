@@ -40,3 +40,15 @@ html {
 .form {
   grid-template-columns: 1fr;
 }
+
+.form__input {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.form__button {
+  padding: 10px;
+  background: hsl(180, 100%, 25%);
+  color: white;
+  border: none;
+}
