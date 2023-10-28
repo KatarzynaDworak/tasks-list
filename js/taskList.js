@@ -44,7 +44,6 @@
             toggleTaskDone(index);
         });
        }); 
-    };
 
     const render = () => {
         let htmlstring = "";
