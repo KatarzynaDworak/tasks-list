@@ -46,7 +46,7 @@
         class="tasks__item js-task"
         >
         <button class="tasks__button tasks__button--toggleDone js-toggleDone">
-        ${task.done ? "✓" : ""}
+        ${task.done ? "✓" : "🗑"}
         </button>
         <span class="tasks__content${ task.done ? " task__content--done" : ""}">
         ${task.content}
