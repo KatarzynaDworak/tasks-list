@@ -42,6 +42,15 @@ box-shadow: 0 0 5px; // pierwsza pozycja do weryfikacji
   color: white;
   border: none;
 }
+
+.form__button:hover {
+  background: hsl(180, 100%, 30%);
+}
+
+.form__button:active {
+  background: hsl(180, 100%, 35%);
+}
+
 .tasks {
   list-style: none;
   margin: 0;
