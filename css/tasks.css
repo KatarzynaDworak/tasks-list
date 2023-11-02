@@ -36,6 +36,12 @@ box-shadow: 0 0 5px; // pierwsza pozycja do weryfikacji
   border: 1px solid #ddd;
 }
 
+.form__button {
+  padding: 10px;
+  background: hsl(180, 100%, 25%);
+  color: white;
+  border: none;
+}
 .tasks {
   list-style: none;
   margin: 0;
