@@ -25,6 +25,12 @@ box-shadow: 0 0 5px; // pierwsza pozycja do weryfikacji
   padding: 20px;
 }
 
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
+}
+
 .tasks {
   list-style: none;
   margin: 0;
