@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="">
     <link rel="icon" href="images/icon.png">
+    <title>Lista zadań</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/tasks.css" rel="stylesheet">
     <link href="css/container.css" rel="stylesheet">
@@ -23,24 +24,23 @@
         <header>
             <h1>Lista zadań</h1>
         </header>
+       
         <section class="section">
             <h2 class="section__header">Dodaj nowe zadanie</h2>
-            <div class="section__body"></div>
+            <div class="section__body">
             <form class="form js-form">
                 <input class="form__input js-newTask" placeholder="Co jest zrobione?">
                 <button class="form__button">Dodaj zadanie</button>
             </form>
-            <ul class="tasks js-tasks"></ul>
-            <li class="tasks__item js-task"></li>
-            <button class="tasks__button tasks__button--done js-toggleDone"></button>
-            <span class="tasks__content tasks__content--done"></span>
+        </div>
         </section>
+
         <section class="section">
             <h2 class="section__header">Lista zadań</h2>
             <div class="section__body">
                 <ul class="tasks js-tasks">
-                    <li class="tasks__item js-task">
-                        <button class="tasks__button tasks__button--done js-toggleDone">
+                   // <li class="tasks__item js-task">
+                   //     <button class="tasks__button tasks__button--toggleDone js-toggleDone">
                             ✔️
                         </button>
                         <span class="tasks__content tasks__content--done"zjeść pierogi></span>
