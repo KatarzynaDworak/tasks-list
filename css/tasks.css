@@ -1,3 +1,30 @@
+.container {
+  max-width: 900px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+main {
+  display: block;
+}
+
+.section {
+margin: 10px 0;
+background: white;
+box-shadow: 0 0 5px; // pierwsza pozycja do weryfikacji
+}
+
+.section__header {
+  font-size: 20px;
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.section__body {
+  padding: 20px;
+}
+
 .tasks {
   list-style: none;
   margin: 0;
