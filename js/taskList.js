@@ -61,7 +61,7 @@
     
         bindRemoveEvents();
 
-    };
+    }};
 
     const onFormSubmit = (event) => {
         event.preventDefault();
