@@ -42,32 +42,29 @@
         
         for (const task of tasks) {
         tasksListHTMLContent +=  `
-        <li 
-        class="tasks__item js-task"
-        >
-        <button class="tasks__button tasks__button--toggleDone js-toggleDone">
-        ${task.done ? "✓" : ""}
-        </button>
-        <span class="tasks__content${ task.done ? " task__content--done" : ""}">
-        ${task.content}
-        </span>
+        <li class="tasks__item js-task">
+        <button class="tasks__button tasks__button--toggleDone js-toggleDone">${task.done ? "✓" : ""}</button>
+        <span class="tasks__content${task.done ? " task__content--done" : ""}">
+        ${task.content}</span>
         <button class="tasks_button tasks_button--remove js-remove">
         🗑
         </button>
         </li>
         `;  
 
-        document.querySelector(".js-tasks").innerHTML = htmlstring;
+        } 
+        
+        document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
     
         bindRemoveEvents();
 
-    }};
+    };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
 
         const newTaskElement = document.querySelector(".js-newTask");
-        const newTaskContent = newTaskElement.ariaValueMax.trim();
+        const newTaskContent = newTaskElement.value.trim();
 
         if(newTaskElement !== "") {
             addNewTask(newTaskContent);
