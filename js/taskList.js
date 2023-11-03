@@ -28,15 +28,15 @@
     };
 
     const bindToggleDoneEvents = () => {
-        const toggleDoneButton = document.querySelectorAll(".js-toggleDone");
+        const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
         toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
             toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(taskIndex);
             });
         });
-
     };
+
     const render = () => {
         let tasksListHTMLContent = "";
         
