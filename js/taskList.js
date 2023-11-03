@@ -13,8 +13,10 @@
 
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({ content: newTaskContent });
-        render();
+        tasks.push({ content: newTaskContent,
+         });
+        
+         render();
     };
 
     const bindRemoveEvents = () => {
@@ -63,15 +65,13 @@
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const newTaskElement = document.querySelector(".js-newTask");
-        const newTaskContent = newTaskElement.value.trim();
+        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        
 
-        if(newTaskElement !== "") {
+        if(newTaskContent !== "") {
             addNewTask(newTaskContent);
-            newTaskElement.value = "";
+            newTaskContent.value = "";
         }
-
-        newTaskElement.focus();
     };
 
     const init = () => {
@@ -80,7 +80,7 @@
         const form = document.querySelector(".js-form");
 
         form.addEventListener("submit", onFormSubmit);
-
-        init();
     };
+
+    init();
 };
