@@ -59,6 +59,7 @@
         document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
     
         bindRemoveEvents();
+        bindToggleDoneEvents();
 
     };
 
