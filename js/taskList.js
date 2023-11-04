@@ -47,7 +47,7 @@
         tasksListHTMLContent +=  `
         
         <li 
-        ${task.done ? " style=\"text-decoration: line-throught\"" : ""}
+        ${task.done ? " style=\"text-decoration: line-through\"" : ""}
         >
         <button class="tasks__button tasks__button--toggleDone js-toggleDone">${task.done ? "✓" : ""}</button>
         ${task.content}
