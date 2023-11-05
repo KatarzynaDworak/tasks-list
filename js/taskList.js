@@ -1,6 +1,13 @@
 {
     const tasks = [];
     
+    const addNewTask = (newTaskContent) => {
+        tasks.push({ content: newTaskContent,
+         });
+        
+         render();
+    };
+    
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
         render();
@@ -10,13 +17,6 @@
         tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
     }
-
-    const addNewTask = (newTaskContent) => {
-        tasks.push({ content: newTaskContent,
-         });
-        
-         render();
-    };
 
     const removeEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
