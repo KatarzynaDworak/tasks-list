@@ -23,7 +23,6 @@
 
         removeButtons.forEach((removeButton, taskIndex) => {
         removeButton.addEventListener("click", () => {
-        
         removeTask(taskIndex);
         });
        }); 
@@ -41,10 +40,10 @@
 
     const render = () => {
     
-        let tasksListHTMLContent = "";
+        let tasksHTMLContent = "";
         
         for (const task of tasks) {
-        tasksListHTMLContent +=  `
+        tasksHTMLContent +=  `
         
         <li class="tasks tasks__item"
         ${task.done ? " style=\"text-decoration: line-through\"" : ""}
@@ -59,10 +58,10 @@
 
         } 
         
-        document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
+        document.querySelector(".js-tasks").innerHTML = tasksHTMLContent;
     
         removeEvents();
-        toggleDoneEvents();
+        Changed name of function for removeEvents and toggleDoneEventsvents();
 
     };
 
