@@ -11,7 +11,6 @@
         render();
     }
 
-
     const addNewTask = (newTaskContent) => {
         tasks.push({ content: newTaskContent,
          });
@@ -19,7 +18,7 @@
          render();
     };
 
-    const bindRemoveEvents = () => {
+    const removeEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
         removeButtons.forEach((removeButton, taskIndex) => {
@@ -30,7 +29,7 @@
        }); 
     };
 
-    const bindToggleDoneEvents = () => {
+    const toggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
         toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
@@ -62,8 +61,8 @@
         
         document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
     
-        bindRemoveEvents();
-        bindToggleDoneEvents();
+        removeEvents();
+        toggleDoneEvents();
 
     };
 
