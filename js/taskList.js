@@ -59,10 +59,10 @@
 
         } 
         
-        document.querySelector(".js-tasks").innerHTML = tasksChanged name of tasksHTMLContentHTMLContent;
+        document.querySelector(".js-tasks").innerHTML = tasksHTMLContent;
     
         removeEvents();
-        Changed name of function for removeEvents and toggleDoneEventsvents();
+        toggleDoneEvents();
 
     };
 
