@@ -5,7 +5,6 @@
         tasks.push({ 
             content: newTaskContent,
          });
-        
          render();
     };
     
@@ -46,13 +45,13 @@
         for (const task of tasks) {
         tasksHTMLContent +=  `
         
-        <li class="tasks__item js-tasks"
-        ${task.done ? " style=\"text-decoration: line-through\"" : ""}
-        >
+        <li class="tasks__item js-tasks">
         <button class="tasks__button tasks__button--toggleDone js-toggleDone">
         ${task.done ? "✓" : ""}
         </button>
+        <apan class="tasks__content${ task.done ? "task__content--done" : ""}">
         ${task.content}
+        </span>
         <button class="tasks__button tasks__button--remove js-remove">
         🗑️
         </button>
