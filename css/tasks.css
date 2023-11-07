@@ -35,6 +35,7 @@
 
 .tasks__button--remove {
   background: hsl(348, 83%, 47%);
+  font-size: 10px;
 }
 
 .tasks__button--remove:hover {
