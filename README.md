@@ -3,6 +3,7 @@ In this app you can store your to-do tasks. Using buttons you can add a new task
 
 # Demo
 Check it out here: To do list app
+[](https://katarzynadworak.github.io/tasks-list/)
 
 # Technologies used
 - ES6+ JavaScript
