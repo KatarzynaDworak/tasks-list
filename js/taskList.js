@@ -49,7 +49,7 @@
         <button class="tasks__button tasks__button--toggleDone js-toggleDone">
         ${task.done ? "✓" : ""}
         </button>
-        <apan class="tasks__content${ task.done ? "task__content--done" : ""}">
+        <apan class="tasks__item${ task.done ? "task__item--done" : ""}">
         ${task.content}
         </span>
         <button class="tasks__button tasks__button--remove js-remove">
