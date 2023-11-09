@@ -14,6 +14,8 @@ Screenshot 1: default apperance, no data entered
 
 Screenshot 2: entered data and displayed result
 
+![Screenshot2](https://github.com/KatarzynaDworak/tasks-list/blob/master/images/screen2.png?raw=true)
+
 # Technologies used
 - ES6+ JavaScript
 - HTML
