@@ -11,4 +11,13 @@ Check it out here: [Tasks list app](https://katarzynadworak.github.io/tasks-list
 - BEM convention
 - media queries
 - google fonts and icons
+
+# Warning
+After refreshing the page, the list will disapear, so you have to be careful ;-)
+
+# Screenshots
+Screenshot 1: default apperance, no data entered
+
+Screenshot 2: entered data and displayed result
+
   
