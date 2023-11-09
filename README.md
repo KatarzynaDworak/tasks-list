@@ -13,11 +13,11 @@ Screenshot 1: default apperance, no data entered
 Screenshot 2: entered data and displayed result
 
 # Technologies used
-- ES6+ JavaScript
-- HTML
-- CSS
-- BEM convention
-- media queries
-- google fonts and icons
+**- ES6+ JavaScript**
+**- HTML**
+**- CSS**
+**- BEM convention**
+**- media queries**
+**- google fonts and icons**
 
   
