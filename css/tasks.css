@@ -13,7 +13,7 @@
   border-bottom: 1px solid #ddd;
 }
 
-.tasks__item--done {
+.tasks__content--done {
   text-decoration: line-through;
 }
 
