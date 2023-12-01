@@ -4,8 +4,8 @@
     const addNewTask = (newTaskContent) => {
         const tasksWithNewTaskContent = [
             ...tasks,
-            content: newTaskContent,
-        ]
+            { content: newTaskContent },
+        ];
            
         render();
     };   
@@ -13,7 +13,7 @@
     const removeTask = (taskIndex) => {
         const taskWithRemoveTask = [
           ...tasks.slice(taskIndex, 1),  
-        ]
+        ];
         
         render();
     }
