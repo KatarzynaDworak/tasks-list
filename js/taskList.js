@@ -11,7 +11,9 @@
     };   
 
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
+        const taskWithRemoveTask = [
+          ...tasks.slice(taskIndex, 1),  
+        ]
         
         render();
     }
