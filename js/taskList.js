@@ -25,7 +25,7 @@
                 ...tasks[taskIndex],
                 done: !tasks[taskIndex].done,
             },
-            ...tasks = task.slice(taskIndex + 1),
+            ...tasks = tasks.slice(taskIndex + 1),
         ];
 
         render();
