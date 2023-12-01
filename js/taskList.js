@@ -2,6 +2,15 @@
     const tasks = [];
 
     const addNewTask = (newTaskContent) => {
+        const tasksWithNewTaskContent = [
+            ...tasks,
+            content: newTaskContent,
+        ]
+           
+        render();
+    };   
+        
+        
         tasks.push({
             content: newTaskContent,
         });
