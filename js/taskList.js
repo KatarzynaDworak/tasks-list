@@ -69,7 +69,7 @@
     };
 
     const renderButtons = () => {
-        
+
     };
     
     const bindButtonsEvents = () => {
@@ -88,6 +88,7 @@
 
         removeEvents();
         toggleDoneEvents();
+        bindButtonsEvents();
 
     };
 
