@@ -24,7 +24,7 @@
         };
         
         tasks = task.map(newToggleTaksDone);
-        
+
         render();
     }
 
@@ -69,9 +69,16 @@
     };
 
     const renderButtons = () => {
-
+        
     };
     
+    const bindButtonsEvents = () => {
+        const firstButton = document.querySelector(js-firstButton);
+        const secondButton = document.querySelector(js-secondButton);
+
+        firstButton = addEventListener("click", renderButtons);
+        secondButton = addEventListener("click", renderButtons);
+    }
     const render = () => {
 
         renderTasks();
