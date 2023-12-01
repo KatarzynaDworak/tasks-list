@@ -33,6 +33,11 @@
   background: hsl(120, 61%, 44%);
 }
 
+.tasks__button--toggleDone:hover {
+  background: hsl(120, 61%, 54%);
+  transform: scale(1.4);
+}
+
 .tasks__button--remove {
   background: hsl(348, 83%, 47%);
   font-size: 10px;
@@ -40,6 +45,7 @@
 
 .tasks__button--remove:hover {
   background: hsl(348, 83%, 52%);
+  transform: scale(1.4);
 }
 
 .tasks__button--remove:active {

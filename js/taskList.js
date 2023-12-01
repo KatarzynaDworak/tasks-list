@@ -2,7 +2,7 @@
     const tasks = [];
 
     const addNewTask = (newTaskContent) => {
-        const tasksWithNewTaskContent = [
+        tasks = [
             ...tasks,
             { content: newTaskContent },
         ];
@@ -11,7 +11,7 @@
     };   
 
     const removeTask = (taskIndex) => {
-        const taskWithRemoveTask = [
+        removeTask = [
           ...tasks.slice(taskIndex, 1),  
         ];
         
@@ -19,7 +19,11 @@
     }
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
+        const newToggleTaksDone = (taskIndex) => {
+            tasks[taskIndex].done = !tasks[taskIndex].done;
+        };
+        
+        tasks = task.map(newToggleTaksDone);
         
         render();
     }
@@ -44,8 +48,7 @@
         });
     };
 
-    const render = () => {
-
+    const renderTasks = () => {
         let tasksHTMLContent = "";
 
         for (const task of tasks) {
@@ -63,6 +66,16 @@
         </li>
         `;
         };
+    };
+
+    const renderButtons = () => {
+
+    };
+    
+    const render = () => {
+
+        renderTasks();
+        renderButtons();
 
         document.querySelector(".js-tasks").innerHTML = tasksHTMLContent;
 
