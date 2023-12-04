@@ -48,7 +48,8 @@
             toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(taskIndex);
         });
-    });
+        });
+    };
 
     const markAllTasksDone = () => {
         tasks = tasks.map((task) => ({
@@ -150,4 +151,4 @@
     };
 
     init();
-}}
+}
